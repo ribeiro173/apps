@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Apps - Um Resumo Rápido!</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mudei a fonte, parece mais "pessoal" */
+            background: #002e73; /* Um cinza claro que não cansa a vista */
+            margin: 0;
+            padding: 25px;
+            line-height: 1.6; 
+        h1 {
+            color: #fc0000; /* Um azul escuro legal */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em; 
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px; 
+            justify-content: center;
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .card {
+            background: linear-gradient(145deg, #ffffff, #e6e6e6); 
+            border-radius: 15px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+            width: 320px; 
+            transition: all 0.3s ease-in-out; 
+            border: 1px solid #ddd; 
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 12px 24px rgba(0,0,0,0.2); 
+        }
+
+        .card h2 {
+            margin-top: 10px; 
+            color: #34495e; 
+            font-size: 1.8em; 
+        }
+
+        .icon {
+            font-size: 48px; 
+            margin-bottom: 15px; 
+            display: block; 
+            text-align: center; 
+        }
+
+        .mahjong { color: #2980b9; } 
+        .placafip { color: #e67e22; } 
+        .screw { color: #27ae60; }
+
+        .text {
+            color: #444; 
+            font-size: 16px; 
+            margin-top: 15px; /
+        }
+
+        .monetization-info {
+            font-weight: bold;
+            color: #007bff; 
+            margin-top: 15px; 
+            border-top: 1px dashed #ccc; 
+            padding-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meus Projetos de Apps (E como eles se viram!)</h1>
+    <div class="container">
+        
+        <div class="card">
+            <div class="icon mahjong">🀄</div>
+            <h2>Vigor Mahjong</h2>
+            <div class="text">
+                Pensado pra galera mais velha, sabe? Tem mais de 20.000 níveis e é super relaxante. A ideia era fazer algo bem acessível e que funcionasse até sem internet. Tá com uma avaliação ótima, 4.8 estrelas!
+                <span class="monetization-info">
+                    **Como ele se paga:** Basicamente, tem uns anúncios rolando e também dá pra comprar umas coisinhas lá dentro. É o padrão, né?
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon placafip">🚗</div>
+            <h2>PLACAFIP</h2>
+            <div class="text">
+                Esse é pra consultar carro pela placa, usando a Tabela FIPE. Mostra tudo: marca, modelo, ano, cidade... E o legal é que funciona com as placas Mercosul e pra vários tipos de veículo. Dá até pra compartilhar o resultado como imagem!
+                <span class="monetization-info">
+                    **Como ele se paga:** Ele é de graça pra usar, mas se você não curte anúncio, pode tirar por R$ 14,90. Um precinho justo pra ter a tela limpa.
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon screw">🪛</div>
+            <h2>Wood Screw Sort</h2>
+            <div class="text">
+                Um puzzle bem casual de organizar parafusos coloridos em barrinhas de madeira. A jogabilidade é super simples (só um dedo!) e vicia que é uma beleza. Sem limite de tempo, ótimo pra relaxar e dar uma treinada no cérebro. Os gráficos 2D são bem bonitinhos e os sons, suaves.
+                <span class="monetization-info">
+                    **Como ele se paga:** Gratuito pra jogar, claro, mas com anúncios. E se quiser uns "extras" ou tirar os anúncios, tem as compras internas.
+                </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
